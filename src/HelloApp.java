@@ -4,10 +4,12 @@ public class HelloApp {
             System.out.println("Hello, World!");
         } 
         else {
+            String names = "";
             for (String name : args) {
-                System.out.println("Hello, " + name + "!");
+                names = names + name + ", ";
             }
+            names = names.substring(0, names.length() - 2);
+            System.out.println("Hello, " + names + "!");
         }
-
     }
 }
